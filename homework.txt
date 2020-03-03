@@ -1,0 +1,3 @@
+ 1. In a language, each sentence is a string starting with a capital letter followed by two or more small letters and ending with three or more digits. Example sentences are Abc001, Zyxw9876 etc. 
+a) Write a BNF grammar for the language.
+<string> : : = <capital> <lowercase> <lowercase> | <more> <digit> <digit> <digit> |<more>
