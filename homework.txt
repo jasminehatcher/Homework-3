@@ -5,4 +5,27 @@ a) Write a BNF grammar for the language.
 <lowercase> ::= [a-z]+
 <digit> ::= [0-9]+
 
+The Grammar
+<S'> ::= < C'> < A'> < D'>
+<C'> ::= < C'> < A'> < D'>
+<A'> ::= < C'> < A'> < D'>
+<A'> ::= < C'> < A'> < D'>
+<A'> ::= < C'> < A'> < D'>
+<A'> ::= < C'> < A'> < D'>
+
 b) Show the derivation and the parse tree of the string Test3501.
+
+
+
+
+
+2. Augment the following BNF to write an attribute grammar. Assume the only possible variable types are integer and float. The language rules are as follows: 
+
+ 1) The types of variables in an expression do not have to be the same. The type of the expression result is that of the first (or leftmost) variable in the expression. 
+
+ 2) If the type of variable to be assigned is integer, the type of the expression must be integer. 
+
+  3) If the type of variable to be assigned is float, the type of the expression can be integer or float. <assign> ® <var> = <expr> <expr> ® <var> + <var> <expr> ® <var> - <var> <expr> ® <var> <var> ® A | B | C 
+ 
+<assign> ® <var> = <expr> <expr> ® <var> + <var> <expr> ® <var> - <var> <expr> ® <var> <var> ® A | B | C 
+ 
