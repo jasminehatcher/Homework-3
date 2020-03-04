@@ -26,7 +26,11 @@ b) Show the derivation and the parse tree of the string Test3501.
  <expr>type = float → <var>type = float + <var>type = int/float
 
 
-  3) If the type of variable to be assigned is float, the type of the expression can be integer or float. <assign> ® <var> = <expr> <expr> ® <var> + <var> <expr> ® <var> - <var> <expr> ® <var> <var> ® A | B | C 
+  3) If the type of variable to be assigned is float, the type of the expression can be integer or float.
  
 <assign> ® <var> = <expr> <expr> ® <var> + <var> <expr> ® <var> - <var> <expr> ® <var> <var> ® A | B | C 
+
+<expr> → <var>  → <var>
+<expr> type = int  → <var> type = int  → <var> type = int/ float
+<expr> type = float  → <var>  type  → <var> type = int/ float
  
